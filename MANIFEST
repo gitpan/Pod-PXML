@@ -1,0 +1,9 @@
+pxml2pod
+Makefile.PL
+MANIFEST
+pod2pxml
+README
+ChangeLog
+test.pl
+lib/Pod/PXML.pm
+lib/Pod/PXML.pod
