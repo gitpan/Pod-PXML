@@ -1,7 +1,13 @@
-# Time-stamp: "2001-05-25 21:50:58 MDT"
+# This -*-perl-*- script writes the Makefile for installing this distribution.
+#
+# See "perldoc perlmodinstall" or "perldoc ExtUtils::MakeMaker" for
+# info on how to control how the installation goes.
+#
+#                                       Time-stamp: "2004-12-29 20:40:11 AST"
+
+require 5.004;
+use strict;
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
 WriteMakefile(
     'NAME'	=> 'Pod::PXML',
     'VERSION_FROM' => 'lib/Pod/PXML.pm', # finds $VERSION
@@ -12,16 +18,5 @@ WriteMakefile(
 		    'HTML::Entities' => 1,
 		    'XML::Parser' => 2,
 		   },
-    'dist'        => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    'dist'        => { COMPRESS => 'gzip -6f', SUFFIX => 'gz', },
 );
-
-package MY;
-
-sub libscan
-{ # Determine things that should *not* be installed
-    my($self, $path) = @_;
-    return '' if $path =~ m/~/;
-    $path;
-}
-
-__END__

@@ -1,5 +1,5 @@
 
-#Time-stamp: "2001-05-25 21:29:34 MDT"
+#Time-stamp: "2004-12-29 18:34:27 AST"
 #TODO: for xml2pod:
 #    Make utf8/Latin-1 an option (default utf8?)
 #    Make E<>ification an option (default to all)
@@ -17,7 +17,7 @@ use vars qw($VERSION $XMLNS %Char2podent %Char2xmlent
  $HIGH_BIT_OK
 );
 $XMLNS = 'http://www.perl.com/CPAN/authors/id/S/SB/SBURKE/pxml_0.01.dtd';
-$VERSION = '0.1001';
+$VERSION = '0.12';
  # I'm going to try to keep the major version numbers in the DTD and the
  #  module in synch.  I dunno about the fractional part, tho.
 $LATIN_1 = 1;
